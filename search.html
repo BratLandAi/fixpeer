@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Поиск подрядчиков – Fixpeer</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow fixed top-0 inset-x-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+      <div class="flex-shrink-0">
+        <a href="index.html" class="text-xl font-bold text-blue-600">Fixpeer</a>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="search.html" class="text-blue-600 font-semibold">Найти подрядчика</a>
+        <a href="post-task.html" class="text-gray-700 hover:text-blue-600">Разместить заказ</a>
+        <a href="feed.html" class="text-gray-700 hover:text-blue-600">Лента</a>
+      </div>
+      <div>
+        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md">Вход / Регистрация</a>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="pt-24 px-4 md:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold mb-6">Поиск подрядчиков</h1>
+
+    <!-- Search & Filters -->
+    <div class="flex flex-col md:flex-row md:space-x-4 mb-8">
+      <div class="flex-1 flex">
+        <input type="text" placeholder="Поиск по имени, услуге или ключевым словам..." class="w-full px-4 py-3 rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <button class="bg-blue-600 text-white px-5 py-3 rounded-r-md">Поиск</button>
+      </div>
+      <div class="mt-4 md:mt-0 flex space-x-2">
+        <select class="px-3 py-3 rounded-md border-gray-300 focus:ring-blue-400">
+          <option>Категория</option>
+          <option>Ремонт квартир</option>
+          <option>Электрика</option>
+          <option>Плитка</option>
+        </select>
+        <select class="px-3 py-3 rounded-md border-gray-300 focus:ring-blue-400">
+          <option>Сортировка</option>
+          <option>По рейтингу</option>
+          <option>По цене</option>
+          <option>По опыту</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Results grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card template (copy for sample) -->
+      <div class="bg-white rounded-lg shadow border hover:shadow-lg transition p-5">
+        <div class="flex items-center mb-4">
+          <img src="https://via.placeholder.com/60" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+          <div class="ml-3">
+            <h3 class="text-lg font-semibold">Анна Петрова</h3>
+            <p class="text-sm text-gray-500">Плиточница · Москва</p>
+            <div class="flex items-center text-yellow-400 text-sm mt-1">
+              ★★★★★ <span class="text-gray-500 ml-1">4.8 (32)</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600">Укладка плитки на пол и стены, облицовка ванных комнат. 5 лет опыта, лицензия.</p>
+        <a href="profile.html" class="mt-4 inline-block text-blue-600 hover:underline">Смотреть профиль</a>
+      </div>
+      <!-- Repeat card for demonstration -->
+      <div class="bg-white rounded-lg shadow border hover:shadow-lg transition p-5">
+        <div class="flex items-center mb-4">
+          <img src="https://via.placeholder.com/60" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+          <div class="ml-3">
+            <h3 class="text-lg font-semibold">Иван Сергеев</h3>
+            <p class="text-sm text-gray-500">Электрик · Санкт-Петербург</p>
+            <div class="flex items-center text-yellow-400 text-sm mt-1">
+              ★★★★★ <span class="text-gray-500 ml-1">4.9 (48)</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600">Монтаж электропроводки, щитков и освещения. Сертифицированный мастер.</p>
+        <a href="profile.html" class="mt-4 inline-block text-blue-600 hover:underline">Смотреть профиль</a>
+      </div>
+      <div class="bg-white rounded-lg shadow border hover:shadow-lg transition p-5">
+        <div class="flex items-center mb-4">
+          <img src="https://via.placeholder.com/60" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+          <div class="ml-3">
+            <h3 class="text-lg font-semibold">Екатерина Смирнова</h3>
+            <p class="text-sm text-gray-500">Сантехник · Казань</p>
+            <div class="flex items-center text-yellow-400 text-sm mt-1">
+              ★★★★★ <span class="text-gray-500 ml-1">4.7 (19)</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600">Установка и ремонт сантехники, система отопления и водоснабжения. 7 лет опыта.</p>
+        <a href="profile.html" class="mt-4 inline-block text-blue-600 hover:underline">Смотреть профиль</a>
+      </div>
+      <div class="bg-white rounded-lg shadow border hover:shadow-lg transition p-5">
+        <div class="flex items-center mb-4">
+          <img src="https://via.placeholder.com/60" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+          <div class="ml-3">
+            <h3 class="text-lg font-semibold">Алексей Кузнецов</h3>
+            <p class="text-sm text-gray-500">Дизайнер интерьера · Екатеринбург</p>
+            <div class="flex items-center text-yellow-400 text-sm mt-1">
+              ★★★★★ <span class="text-gray-500 ml-1">5.0 (12)</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600">Разработка дизайна интерьера, 3D визуализации и подбор материалов.</p>
+        <a href="profile.html" class="mt-4 inline-block text-blue-600 hover:underline">Смотреть профиль</a>
+      </div>
+      <div class="bg-white rounded-lg shadow border hover:shadow-lg transition p-5">
+        <div class="flex items-center mb-4">
+          <img src="https://via.placeholder.com/60" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+          <div class="ml-3">
+            <h3 class="text-lg font-semibold">Наталья Ким</h3>
+            <p class="text-sm text-gray-500">Маляр · Новосибирск</p>
+            <div class="flex items-center text-yellow-400 text-sm mt-1">
+              ★★★★★ <span class="text-gray-500 ml-1">4.9 (23)</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600">Шпаклевка стен, покраска и декорирование помещений. Сертификаты качества.</p>
+        <a href="profile.html" class="mt-4 inline-block text-blue-600 hover:underline">Смотреть профиль</a>
+      </div>
+      <div class="bg-white rounded-lg shadow border hover:shadow-lg transition p-5">
+        <div class="flex items-center mb-4">
+          <img src="https://via.placeholder.com/60" alt="avatar" class="w-12 h-12 rounded-full object-cover">
+          <div class="ml-3">
+            <h3 class="text-lg font-semibold">Роман Беляев</h3>
+            <p class="text-sm text-gray-500">Ремонт под ключ · Сочи</p>
+            <div class="flex items-center text-yellow-400 text-sm mt-1">
+              ★★★★★ <span class="text-gray-500 ml-1">4.8 (55)</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-600">Комплексный ремонт квартир и домов. Полный цикл работ с гарантией.</p>
+        <a href="profile.html" class="mt-4 inline-block text-blue-600 hover:underline">Смотреть профиль</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white border-t py-6 mt-12 text-center text-gray-500">
+    &copy; 2025 Fixpeer. Все права защищены.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Разместить заказ – Fixpeer</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow fixed top-0 inset-x-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+      <div class="flex-shrink-0">
+        <a href="index.html" class="text-xl font-bold text-blue-600">Fixpeer</a>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="search.html" class="text-gray-700 hover:text-blue-600">Найти подрядчика</a>
+        <a href="post-task.html" class="text-blue-600 font-semibold">Разместить заказ</a>
+        <a href="feed.html" class="text-gray-700 hover:text-blue-600">Лента</a>
+      </div>
+      <div>
+        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md">Вход / Регистрация</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">Разместить заказ</h1>
+    <p class="text-gray-600 mb-8">Опишите вашу задачу, чтобы мы подобрали подходящих исполнителей. Чем точнее информация, тем лучше результат.</p>
+
+    <form class="bg-white rounded-lg shadow p-8 space-y-6">
+      <div>
+        <label class="block text-gray-700 font-medium mb-2" for="title">Название заказа</label>
+        <input id="title" type="text" placeholder="Например: Ремонт ванной комнаты" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-400 focus:border-blue-400">
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-2" for="category">Категория</label>
+        <select id="category" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-400 focus:border-blue-400">
+          <option selected>Выберите категорию</option>
+          <option>Ремонт квартир</option>
+          <option>Электрика</option>
+          <option>Плиточные работы</option>
+          <option>Сантехника</option>
+          <option>Дизайн интерьера</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-2" for="description">Описание</label>
+        <textarea id="description" rows="5" placeholder="Опишите, что нужно сделать, укажите площадь, материалы, сроки и т. д." class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-400 focus:border-blue-400"></textarea>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-gray-700 font-medium mb-2" for="budget">Бюджет (руб.)</label>
+          <input id="budget" type="number" placeholder="Например: 50000" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-400 focus:border-blue-400">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-medium mb-2" for="deadline">Срок выполнения</label>
+          <input id="deadline" type="date" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-400 focus:border-blue-400">
+        </div>
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-2" for="address">Адрес или район</label>
+        <input id="address" type="text" placeholder="Город, улица или район" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-blue-400 focus:border-blue-400">
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-2" for="files">Фотографии / чертежи</label>
+        <input id="files" type="file" multiple class="w-full">
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-md">Опубликовать заказ</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="bg-white border-t py-6 mt-12 text-center text-gray-500">
+    &copy; 2025 Fixpeer. Все права защищены.
+  </footer>
+</body>
+</html>

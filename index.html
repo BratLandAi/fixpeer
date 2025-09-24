@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Fixpeer – Найти подрядчиков по ремонту и стройке</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow fixed top-0 inset-x-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+      <div class="flex-shrink-0">
+        <a href="index.html" class="text-xl font-bold text-blue-600">Fixpeer</a>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="search.html" class="text-gray-700 hover:text-blue-600">Найти подрядчика</a>
+        <a href="post-task.html" class="text-gray-700 hover:text-blue-600">Разместить заказ</a>
+        <a href="feed.html" class="text-gray-700 hover:text-blue-600">Лента</a>
+      </div>
+      <div>
+        <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md">Вход / Регистрация</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="pt-24">
+    <!-- Hero Section -->
+    <section class="text-center py-20 bg-gray-100">
+      <h1 class="text-4xl font-bold mb-4">Найдите проверенного подрядчика</h1>
+      <p class="text-lg text-gray-600 mb-8">Безопасные сделки, рейтинги, лицензии и прозрачные профили</p>
+      <div class="max-w-xl mx-auto flex">
+        <input type="text" placeholder="Поиск услуги или имени..." class="w-full px-4 py-3 rounded-l-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <button class="bg-blue-600 text-white px-5 py-3 rounded-r-md">Поиск</button>
+      </div>
+      <div class="mt-6">
+        <a href="post-task.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md mt-4">Разместить заказ</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-4">
+        <div class="text-center">
+          <div class="flex items-center justify-center w-12 h-12 mx-auto bg-blue-100 rounded-full">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 2"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mt-4">Безопасные сделки</h3>
+          <p class="text-gray-600 mt-2">Эскроу и арбитраж обеспечивают финансовую и юридическую защиту.</p>
+        </div>
+        <div class="text-center">
+          <div class="flex items-center justify-center w-12 h-12 mx-auto bg-blue-100 rounded-full">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h13M6 6h13M9 14h13M12 18h13"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mt-4">Интеллектуальный поиск</h3>
+          <p class="text-gray-600 mt-2">Подбор исполнителей по рейтингу, лицензиям, опыту и геолокации.</p>
+        </div>
+        <div class="text-center">
+          <div class="flex items-center justify-center w-12 h-12 mx-auto bg-blue-100 rounded-full">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M9 16h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-semibold mt-4">Социальная сеть</h3>
+          <p class="text-gray-600 mt-2">Публикуйте посты, делитесь видеороликами и собирайте подписчиков.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="bg-gray-50 py-16">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10">Как это работает</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+          <div>
+            <div class="flex items-center justify-center w-12 h-12 mx-auto bg-blue-100 rounded-full">
+              <span class="text-blue-600 font-bold text-lg">1</span>
+            </div>
+            <h3 class="font-semibold text-xl mt-4">Регистрация</h3>
+            <p class="text-gray-600 mt-2">Создайте аккаунт заказчика или подрядчика за пару минут.</p>
+          </div>
+          <div>
+            <div class="flex items-center justify-center w-12 h-12 mx-auto bg-blue-100 rounded-full">
+              <span class="text-blue-600 font-bold text-lg">2</span>
+            </div>
+            <h3 class="font-semibold text-xl mt-4">Разместите или найдите заказ</h3>
+            <p class="text-gray-600 mt-2">Заполните заявку и получайте предложения от проверенных специалистов.</p>
+          </div>
+          <div>
+            <div class="flex items-center justify-center w-12 h-12 mx-auto bg-blue-100 rounded-full">
+              <span class="text-blue-600 font-bold text-lg">3</span>
+            </div>
+            <h3 class="font-semibold text-xl mt-4">Заключите сделку</h3>
+            <p class="text-gray-600 mt-2">Эскроу‑сделка и арбитраж защитят ваши деньги и сроки выполнения.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-6 text-center text-gray-500">
+    &copy; 2025 Fixpeer. Все права защищены.
+  </footer>
+</body>
+</html>
