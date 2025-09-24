@@ -1,26 +1,39 @@
 [
   {
-    "id": 1,
-    "name": "Иван Петров",
-    "service": "Электрик",
+    "username": "anna.petrov",
+    "full_name": "Анна Петрова",
+    "category": "Плиточные работы",
+    "city": "Москва",
+    "description": "Укладка плитки на пол и стены, облицовка ванной комнаты и балконов. 5 лет опыта, лицензия.",
     "rating": 4.8,
-    "location": "Дубай",
-    "description": "Опытный электрик для жилых и коммерческих проектов."
+    "experience_years": 5,
+    "socials": {
+      "Instagram": "https://instagram.com/anna_tiles",
+      "TikTok": "https://tiktok.com/@anna_tiles"
+    }
   },
   {
-    "id": 2,
-    "name": "Ahmed Al-Farsi",
-    "service": "Сантехник",
-    "rating": 4.5,
-    "location": "Абу-Даби",
-    "description": "Сертифицированный сантехник с 5-летним опытом, доступен 24/7."
-  },
-  {
-    "id": 3,
-    "name": "Sara Ibrahim",
-    "service": "Дизайнер интерьеров",
+    "username": "ivan.sergeev",
+    "full_name": "Иван Сергеев",
+    "category": "Электрика",
+    "city": "Санкт-Петербург",
+    "description": "Монтаж электропроводки, щитков и освещения. Сертифицированный мастер с 8‑летним опытом.",
     "rating": 4.9,
-    "location": "Шарджа",
-    "description": "Креативный дизайнер интерьеров, специализирующийся на современном стиле."
+    "experience_years": 8,
+    "socials": {
+      "LinkedIn": "https://linkedin.com/in/ivan-electrician"
+    }
+  },
+  {
+    "username": "natalia.kim",
+    "full_name": "Наталья Ким",
+    "category": "Малярные работы",
+    "city": "Новосибирск",
+    "description": "Шпаклевка стен, покраска и декорирование помещений. 7 лет опыта, сертификаты качества.",
+    "rating": 4.7,
+    "experience_years": 7,
+    "socials": {
+      "Instagram": "https://instagram.com/natalia_paint"
+    }
   }
 ]
